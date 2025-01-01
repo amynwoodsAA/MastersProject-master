@@ -1,0 +1,24 @@
+{
+    "name": "tree name 3",
+    "type": "node type 0",
+    "children":[
+        {
+            "name": "B",
+            "type": "node type 1"
+        },
+        {
+            "name":  "C",
+            "type": "node type 2",
+            "children": [
+                {
+                    "name": "D",
+                    "type": "node type 3"
+                },
+                {
+                    "name": "E",
+                    "type": "node type 3"
+                }
+            ]
+        }
+    ]
+}

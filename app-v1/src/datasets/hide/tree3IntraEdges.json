@@ -1,0 +1,84 @@
+[
+  {
+    "treeName": "tree name 3",
+    "startNode": "B",
+    "startNodeType": "node type 1",
+    "endNode": "E",
+    "endNodeType": "node type 3",
+    "edgeType1": "aa",
+    "edgeType2": ""
+  },
+  {
+    "treeName": "tree name 3",
+    "startNode": "E",
+    "startNodeType": "node type 3",
+    "endNode": "B",
+    "endNodeType": "node type 1",
+    "edgeType1": "cc",
+    "edgeType2": ""
+  },
+  {
+    "treeName": "tree name 3",
+    "startNode": "C",
+    "startNodeType": "node type 2",
+    "endNode": "B",
+    "endNodeType": "node type 1",
+    "edgeType1": "cc",
+    "edgeType2": "bb"
+  },
+  {
+    "treeName": "tree name 3",
+    "startNode": "D",
+    "startNodeType": "node type 3",
+    "endNode": "B",
+    "endNodeType": "node type 1",
+    "edgeType1": "cc",
+    "edgeType2": "bb"
+  },
+  {
+    "treeName": "tree name 3",
+    "startNode": "B",
+    "startNodeType": "node type 1",
+    "endNode": "E",
+    "endNodeType": "node type 3",
+    "edgeType1": "bb",
+    "edgeType2": ""
+  },
+  {
+    "treeName": "tree name 3",
+    "startNode": "B",
+    "startNodeType": "node type 1",
+    "endNode": "E",
+    "endNodeType": "node type 3",
+    "edgeType1": "dd",
+    "edgeType2": ""
+  },
+  {
+    "treeName": "tree name 3",
+    "startNode": "B",
+    "startNodeType": "node type 1",
+    "endNode": "E",
+    "endNodeType": "node type 3",
+    "edgeType1": "ff",
+    "edgeType2": ""
+  },
+  {
+    "treeName": "tree name 3",
+    "startNode": "E",
+    "startNodeType": "node type 3",
+    "endNode": "B",
+    "endNodeType": "node type 1",
+    "edgeType1": "dd",
+    "edgeType2": ""
+  },
+  {
+    "treeName": "tree name 3",
+    "startNode": "E",
+    "startNodeType": "node type 3",
+    "endNode": "B",
+    "endNodeType": "node type 1",
+    "edgeType1": "ff",
+    "edgeType2": ""
+  }
+
+]

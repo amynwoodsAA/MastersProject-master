@@ -1,0 +1,247 @@
+{
+    "name": "tree name 3",
+    "type": "node type 0",
+    "id": "tn3",
+    "children": [
+        {
+            "name": "node name 0",
+            "type": "node type 2",
+            "id": "tn3A"
+        },
+        {
+            "name": "node name 1",
+            "type": "node type 2",
+            "id": "tn3B",
+            "children": [
+                {
+                    "name": "node name 2",
+                    "type": "node type 7",
+                    "id": "tn3B0"
+                }
+            ]
+        },
+        {
+            "name": "node name 3",
+            "type": "node type 6",
+            "id": "tn3C",
+            "children": [
+                {
+                    "name": "node name 4",
+                    "type": "node type 5",
+                    "id": "tn3C0"
+                },
+                {
+                    "name": "node name 5",
+                    "type": "node type 3",
+                    "id": "tn3C1",
+                    "children": [
+                        {
+                            "name": "node name 6",
+                            "type": "node type 7",
+                            "id": "tn3C1A",
+                            "children": [
+                                {
+                                    "name": "node name 7",
+                                    "type": "node type 7",
+                                    "id": "tn3C1A0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "node name 8",
+                            "type": "node type 5",
+                            "id": "tn3C1B"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "node name 9",
+            "type": "node type 6",
+            "id": "tn3D"
+        },
+        {
+            "name": "node name 10",
+            "type": "node type 6",
+            "id": "tn3E"
+        },
+        {
+            "name": "node name 11",
+            "type": "node type 3",
+            "id": "tn3F",
+            "children": [
+                {
+                    "name": "node name 12",
+                    "type": "node type 2",
+                    "id": "tn3F0"
+                }
+            ]
+        },
+        {
+            "name": "node name 13",
+            "type": "node type 7",
+            "id": "tn3G",
+            "children": [
+                {
+                    "name": "node name 14",
+                    "type": "node type 1",
+                    "id": "tn3G0"
+                },
+                {
+                    "name": "node name 15",
+                    "type": "node type 7",
+                    "id": "tn3G1"
+                }
+            ]
+        },
+        {
+            "name": "node name 16",
+            "type": "node type 5",
+            "id": "tn3H",
+            "children": [
+                {
+                    "name": "node name 17",
+                    "type": "node type 4",
+                    "id": "tn3H0"
+                }
+            ]
+        },
+        {
+            "name": "node name 18",
+            "type": "node type 3",
+            "id": "tn3I",
+            "children": [
+                {
+                    "name": "node name 19",
+                    "type": "node type 2",
+                    "id": "tn3I0"
+                },
+                {
+                    "name": "node name 20",
+                    "type": "node type 5",
+                    "id": "tn3I1"
+                }
+            ]
+        },
+        {
+            "name": "node name 21",
+            "type": "node type 2",
+            "id": "tn3J"
+        },
+        {
+            "name": "node name 22",
+            "type": "node type 4",
+            "id": "tn3K",
+            "children": [
+                {
+                    "name": "node name 23",
+                    "type": "node type 2",
+                    "id": "tn3K0",
+                    "children": [
+                        {
+                            "name": "node name 24",
+                            "type": "node type 7",
+                            "id": "tn3K0A",
+                            "children": [
+                                {
+                                    "name": "node name 25",
+                                    "type": "node type 2",
+                                    "id": "tn3K0A0",
+                                    "children": [
+                                        {
+                                            "name": "node name 26",
+                                            "type": "node type 4",
+                                            "id": "tn3K0A0A"
+                                        },
+                                        {
+                                            "name": "node name 27",
+                                            "type": "node type 1",
+                                            "id": "tn3K0A0B"
+                                        },
+                                        {
+                                            "name": "node name 28",
+                                            "type": "node type 3",
+                                            "id": "tn3K0A0C"
+                                        },
+                                        {
+                                            "name": "node name 29",
+                                            "type": "node type 6",
+                                            "id": "tn3K0A0D"
+                                        },
+                                        {
+                                            "name": "node name 30",
+                                            "type": "node type 1",
+                                            "id": "tn3K0A0E"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "node name 31",
+                                    "type": "node type 4",
+                                    "id": "tn3K0A1",
+                                    "children": [
+                                        {
+                                            "name": "node name 32",
+                                            "type": "node type 7",
+                                            "id": "tn3K0A1A"
+                                        },
+                                        {
+                                            "name": "node name 33",
+                                            "type": "node type 4",
+                                            "id": "tn3K0A1B"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "node name 34",
+            "type": "node type 2",
+            "id": "tn3L"
+        },
+        {
+            "name": "node name 35",
+            "type": "node type 7",
+            "id": "tn3M",
+            "children": [
+                {
+                    "name": "node name 36",
+                    "type": "node type 7",
+                    "id": "tn3M0"
+                }
+            ]
+        },
+        {
+            "name": "node name 37",
+            "type": "node type 4",
+            "id": "tn3N"
+        },
+        {
+            "name": "node name 38",
+            "type": "node type 1",
+            "id": "tn3O",
+            "children": [
+                {
+                    "name": "node name 39",
+                    "type": "node type 4",
+                    "id": "tn3O0"
+                }
+            ]
+        },
+        {
+            "name": "node name 40",
+            "type": "node type 6",
+            "id": "tn3P"
+        },
+        {
+            "name": "node name 41",
+            "type": "node type 6",
+            "id": "tn3Q"
+        }
+    ]
+}

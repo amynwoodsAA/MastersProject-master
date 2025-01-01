@@ -1,0 +1,520 @@
+{
+    "name": "tree name 2",
+    "type": "node type 0",
+    "children":[
+        {
+            "name": "B",
+            "type": "node type 1"
+        },
+        {
+            "Name":  "C",
+            "type": "node type 2",
+            "children": [
+                {
+                    "name": "D",
+                    "type": "node type 4"
+                },
+                {
+                    "name": "E",
+                    "type": "node type 4"
+                },
+                {
+                    "name": "F",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "G",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "H",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "K",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },                
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 6"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "I",
+                    "type": "node type 5"
+                },
+                {
+                    "name": "J",
+                    "type": "node type 5"
+                }
+
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "name": "tree name 7",
+    "type": "node type 0",
+    "children":[
+        {
+            "name": "B",
+            "type": "node type 1",
+            "children": [
+                {
+                    "name": "C",
+                    "type": "node type 3",
+                    "children": [
+                        {
+                            "name": "D",
+                            "type": "node type 5"
+                        },
+                        {
+                            "name": "E",
+                            "type": "node type 4",
+                            "children": [
+                                {
+                                    "name": "F",
+                                    "type": "node type 5",
+                                    "children": [
+                                        {
+                                            "name": "G",
+                                            "type": "node type 6"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "H",
+                                    "type": "node type 4"
+                                },
+                                {
+                                    "name": "I",
+                                    "type": "node type 3",
+                                    "children": [
+                                        {
+                                            "name": "J",
+                                            "type": "node type 5"
+                                        },
+                                        {
+                                            "name": "K",
+                                            "type": "node type 6"
+                                        }
+                                    ]
+                                },{
+                                    "name": "L",
+                                    "type": "node type 7"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name":  "M",
+            "type": "node type 3",
+            "children": [
+                {
+                    "name": "N",
+                    "type": "node type 7"
+                }
+            ]
+        },
+        {
+            "name": "O",
+            "type": "node type 5",
+            "children": [
+                {
+                    "name": "P",
+                    "type": "node type 4"
+                },
+                {
+                    "name": "Q",
+                    "type": "node type 6",
+                    "children": [
+                        {
+                            "name": "R",
+                            "type": "node type 6",
+                            "children": [
+                                {
+                                    "name": "S",
+                                    "type": "node type 7"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

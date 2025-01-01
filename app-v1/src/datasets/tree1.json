@@ -1,0 +1,135 @@
+{
+    "name": "tree name 1",
+    "type": "node type 0",
+    "id": "tn1",
+    "children": [
+        {
+            "name": "node name 0",
+            "type": "node type 4",
+            "id": "tn1A"
+        },
+        {
+            "name": "node name 1",
+            "type": "node type 2",
+            "id": "tn1B",
+            "children": [
+                {
+                    "name": "node name 2",
+                    "type": "node type 4",
+                    "id": "tn1B0"
+                }
+            ]
+        },
+        {
+            "name": "node name 3",
+            "type": "node type 4",
+            "id": "tn1C",
+            "children": [
+                {
+                    "name": "node name 4",
+                    "type": "node type 4",
+                    "id": "tn1C0",
+                    "children": [
+                        {
+                            "name": "node name 5",
+                            "type": "node type 2",
+                            "id": "tn1C0A"
+                        },
+                        {
+                            "name": "node name 6",
+                            "type": "node type 1",
+                            "id": "tn1C0B"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "node name 7",
+            "type": "node type 1",
+            "id": "tn1D",
+            "children": [
+                {
+                    "name": "node name 8",
+                    "type": "node type 3",
+                    "id": "tn1D0"
+                }
+            ]
+        },
+        {
+            "name": "node name 9",
+            "type": "node type 5",
+            "id": "tn1E"
+        },
+        {
+            "name": "node name 10",
+            "type": "node type 3",
+            "id": "tn1F"
+        },
+        {
+            "name": "node name 11",
+            "type": "node type 2",
+            "id": "tn1G",
+            "children": [
+                {
+                    "name": "node name 12",
+                    "type": "node type 6",
+                    "id": "tn1G0",
+                    "children": [
+                        {
+                            "name": "node name 13",
+                            "type": "node type 1",
+                            "id": "tn1G0A"
+                        },
+                        {
+                            "name": "node name 14",
+                            "type": "node type 1",
+                            "id": "tn1G0B",
+                            "children": [
+                                {
+                                    "name": "node name 15",
+                                    "type": "node type 2",
+                                    "id": "tn1G0B0",
+                                    "children": [
+                                        {
+                                            "name": "node name 16",
+                                            "type": "node type 2",
+                                            "id": "tn1G0B0A",
+                                            "children": [
+                                                {
+                                                    "name": "node name 17",
+                                                    "type": "node type 4",
+                                                    "id": "tn1G0B0A0"
+                                                },
+                                                {
+                                                    "name": "node name 18",
+                                                    "type": "node type 3",
+                                                    "id": "tn1G0B0A1"
+                                                },
+                                                {
+                                                    "name": "node name 19",
+                                                    "type": "node type 3",
+                                                    "id": "tn1G0B0A2"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "node name 20",
+                                            "type": "node type 6",
+                                            "id": "tn1G0B0B"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "node name 21",
+            "type": "node type 5",
+            "id": "tn1H"
+        }
+    ]
+}

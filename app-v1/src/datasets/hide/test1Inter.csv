@@ -1,0 +1,9 @@
+﻿startTree,startNode,endTree,endNode,edgeType1,edgeType2
+tree name 3,B,tree name 7,C,aa,
+tree name 3,E,tree name 7,J,bb,dd
+tree name 3,E,tree name 7,K,aa,
+tree name 7,O,tree name 3,E,cc,
+tree name 7,O,tree name 3,D,aa,ee
+tree name 7,R,tree name 3,C,aa,
+tree name 7,C,tree name 3,B,bb,
+tree name 2,D,tree name 3,D,cc,dd
