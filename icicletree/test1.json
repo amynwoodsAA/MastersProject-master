@@ -1,0 +1,19 @@
+{
+    "name": "NCF 1",
+    "children":[
+        {
+            "name": "B"
+        },
+        {
+            "Name":  "C",
+            "children": [
+                {
+                    "name": "D"
+                },
+                {
+                    "name": "E"
+                }
+            ]
+        }
+    ]
+}

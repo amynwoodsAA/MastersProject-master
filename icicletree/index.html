@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+rect {
+  stroke: #fff;
+}
+
+</style>
+<body>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script>
+
+var width = 700,
+    height = 500;
+
+var container = d3.select("body").append("div").attr("width", width + 'px')
+    .attr("height", height + 'px')
+    .style("overflow", "hidden");
+
+function zoomed({transform}) {
+    console.log("in zoomed", transform);
+    console.log("current transform", svg.attr("transform"))
+    svg.attr("transform", transform);
+  }
+
+const zoomTotal = d3.zoom()
+      .scaleExtent([1/4, 40])
+      .on("zoom", zoomed);
+
+
+var svg = container.append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("style", "outline: thin solid black")
+    .call(zoomTotal).append('g');
+
+//var g = svg.append('g');
+
+
+
+//svg.call(zoomTotal);
+
+
+var x = d3.scaleLinear()
+    .range([0, width]);
+
+var y = d3.scaleLinear()
+    .range([0, height]);
+
+var color = d3.scaleOrdinal(d3.schemeCategory10);
+
+var partition = d3.partition().size([width, height]);
+
+d3.json("test2.json").then( function(root) {
+    var rootNode = d3.hierarchy(root);  
+
+    console.log("root ", root);
+
+    rootNode.count();
+
+    console.log("rootnode", rootNode)
+
+    partition(rootNode);
+
+    //console.log("rootnode", rootNode)
+
+    var redo = false;
+
+    var fixers = [];
+
+    (rootNode.descendants()).forEach(function(d){
+        if(d.x1 - d.x0 < 5 * 2.5){
+            fixers.push(d);
+        }
+    })
+
+    console.log("fixers ", fixers);
+
+    while(fixers.length > 0){
+        var diff = ((5 *2.5) - (fixers[0].x1 - fixers[0].x0)) + 1;
+        width = width + 1;
+        svg.attr("width", width)
+        x = d3.scaleLinear()
+            .range([0, width]);
+        partition = d3.partition().size([width, height])
+        partition(rootNode);
+
+        fixers = [];
+
+        (rootNode.descendants()).forEach(function(d){
+            if(d.x1 - d.x0 < 5 * 2.5){
+                fixers.push(d);
+            }
+        })
+    }
+
+    svg.append('g')
+        .selectAll('rect')
+        .data(rootNode.descendants())
+        .enter()
+        .append('rect')
+        .attr('x', function(d) { return d.x0; })
+        .attr('y', function(d) { return d.y0; })
+        .attr('width', function(d) { return d.x1 - d.x0; })
+        .attr('height', function(d) { return d.y1 - d.y0; })
+        .attr("fill", "lightgrey")
+        .style("stroke", function(d){
+            if(d.x1 - d.x0 < 5 * 2.5){
+                return "black"
+            }
+            return "white"
+        })
+        .on("click", function(event,d){
+            d3.select(this).attr("fill", "red")
+        })
+        .on("mouseover", function(event,d){
+            d3.select(this).attr("fill", "green")
+        })
+        .on("mouseout", function(event,d){
+            svg.selectAll("rect").attr("fill", function(d){
+                console.log(d3.select(this).attr("fill"))
+                if(d3.select(this).attr("fill") == "red"){
+                    return "red";
+                }
+
+                return "lightgrey";
+            })
+        })
+
+
+
+
+    svg.append('g').selectAll("path")
+        .data(rootNode.descendants().slice(1))
+        .enter()
+        .append('path')
+        .attr("d", function(d){
+            var x = (d.x0 + d.x1 )/ 2;
+            var y = ( d.y1 + d.y0 )/ 2;
+            var parentX = (d.parent.x0 + d.parent.x1 )/ 2;
+            var parentY = (d.parent.y0 + d.parent.y1 )/ 2;
+            return "M" + x + "," + y
+            + "C" + x + "," + (y + parentY)/2
+            + " " + parentX + "," + (y + parentY)/2
+            + " " + parentX + "," + parentY;
+        })
+        .attr("stroke", "yellow")
+        .attr("fill", "none")
+
+        svg.append('g').selectAll("circle")
+        .data(rootNode.descendants())
+        .enter().append("circle")
+        .attr("r", 5)
+        .attr("cx", function(d) { 
+            return  (d.x0 + d.x1 )/ 2; 
+        } )
+        .attr("cy",  function(d) { 
+            return  ( d.y1 + d.y0 )/ 2; 
+        })
+        .style("fill", "black")
+
+
+    
+
+        
+    var bounds = d3.selectAll("svg").node().getBBox();
+    console.log("bounds ", bounds);
+
+    var fullWidth = d3.selectAll("svg").attr("width"),
+	    fullHeight =  d3.selectAll("svg").attr("height");
+	var width2 = bounds.width,
+	    height2 = bounds.height;
+
+    console.log("fullWidth ", fullWidth);
+    console.log("fullHeight ", fullHeight);
+    console.log("width2 ", width2);
+    console.log("height2 ", height2);
+
+    var midX = bounds.x + width2 / 2,
+	    midY = bounds.y + height2 / 2;
+
+    var paddingPercent = 0.95;
+    var transitionDuration = 500;
+
+    var scale1 = (paddingPercent) / Math.max(width2 / fullWidth, height2 / fullHeight);
+	var translate1 = [fullWidth / 2 - scale1 * midX, fullHeight / 2 - scale1 * midY];
+
+    console.log("scale1 ", scale1);
+    console.log("translate1 ", translate1);
+    //console.log("zoom id ", d3.zoomIdentity.translate(width2/ 2, height2/2).scale(scale1).translate(translate1) )
+    console.log("zoom id ",  d3.zoomIdentity.translate(translate1[0], translate1[1]).scale(scale1))
+
+
+    // function zoomed({transform}) {
+    //     svg.attr("transform", transform);
+    // }
+    var zoom2 = d3.zoom()
+    .scaleExtent([1/4, 40])
+	.on('zoom', zoomed);
+
+    svg.transition()
+    .duration(transitionDuration)
+    .call(zoomTotal.transform,
+    d3.zoomIdentity.translate(translate1[0], translate1[1]).scale(scale1));
+
+    
+
+});
+//svg.call(zoomTotal)
+
+
+
+
+
+// var partition = d3.partition()
+//     .children(function(d) { return isNaN(d.value) ? d3.entries(d.value) : null; })
+//     .value(function(d) { return d.value; });
+
+// var container = d3.select("body").append("div").attr("width", width/4)
+//     .attr("height", height/2)
+//     .style("overflow-x", "scroll");
+
+
+// var svg = container.append("svg")
+//     .attr("width", width*2)
+//     .attr("height", height);
+
+// var rect = svg.selectAll("rect");
+
+// d3.json("test1.json", function(error, root) {
+//   if (error) throw error;
+
+//   var redo = false;
+
+// //   do{
+// //     redo = false;
+// //     (partition(d3.entries(root)[0])).forEach(function(d){
+// //    // console.log("hi here ", d);
+
+// //     if(x(d.dx) < 5 * 2.5){
+// //       console.log("found redoing ", d, " current width ", width);
+// //         if(redo == false){
+// //           width = width + 1;
+// //           svg.attr("width", width)
+// //           x = d3.scale.linear()
+// //             .range([0, width]);
+// //           redo = true;
+// //         }
+// //     }
+// //   })
+// //   }while(redo == true);
+
+
+
+//   rect = rect
+//       .data(partition(d3.entries(root)[0]))
+//     .enter().append("rect")
+//       .attr("x", function(d) { return x(d.x); })
+//       .attr("y", function(d) { return y(d.y); })
+//       .attr("width", function(d) { return x(d.dx); })
+//       .attr("height", function(d) { return y(d.dy); })
+//       .attr("fill", function(d) { return color((d.children ? d : d.parent).key); })
+//       .style('stroke', function(d){
+//         if(x(d.dx) < 5 * 2.5){
+//           console.log("d is ----------------- ", d)
+//           console.log(" dx ", x(d.dx))
+//           return 'black';
+//         }
+
+//         return 'white';
+//       })
+//       .on("click", clicked);
+
+//   svg.append('g').selectAll("circle")
+//   .data(partition(d3.entries(root)[0]))
+//   .enter().append("circle")
+//   .attr("r", 5)
+//   .attr("cx", function(d) { 
+    
+
+    
+//     return  (x(d.x) + x(d.x) + x(d.dx) )/ 2; 
+//   } )
+//   .attr("cy",  function(d) { 
+//     return  (y(d.y) + y(d.y) + y(d.dy) )/ 2; 
+//   })
+//   .style("fill", "green")
+
+//   svg.append("line")          // attach a line
+//     .style("stroke", "black")  // colour the line
+//     .attr("x1", 100)     // x position of the first end of the line
+//     .attr("y1", 50)      // y position of the first end of the line
+//     .attr("x2", 300)     // x position of the second end of the line
+//     .attr("y2", 150);    // y position of the second end of the line
+// });
+
+
+
+// function clicked(d) {
+//   x.domain([d.x, d.x + d.dx]);
+//   y.domain([d.y, 1]).range([d.y ? 20 : 0, height]);
+//   console.log("clicked d, ", d)
+
+//   rect.transition()
+//       .duration(750)
+//       .attr("x", function(d) { return x(d.x); })
+//       .attr("y", function(d) { return y(d.y); })
+//       .attr("width", function(d) { return x(d.x + d.dx) - x(d.x); })
+//       .attr("height", function(d) { return y(d.y + d.dy) - y(d.y); });
+// }
+
+</script>

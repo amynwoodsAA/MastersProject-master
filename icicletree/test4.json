@@ -1,0 +1,76 @@
+{
+    "name": "NCF 1",
+    "children":[
+        {
+            "name": "B",
+            "children": [
+                {
+                    "name": "C",
+                    "children": [
+                        {
+                            "name": "D"
+                        },
+                        {
+                            "name": "E",
+                            "children": [
+                                {
+                                    "name": "F",
+                                    "children": [
+                                        {
+                                            "name": "G"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "H"
+                                },
+                                {
+                                    "name": "I",
+                                    "children": [
+                                        {
+                                            "name": "J"
+                                        },
+                                        {
+                                            "name": "K"
+                                        }
+                                    ]
+                                },{
+                                    "name": "L"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name":  "M",
+            "children": [
+                {
+                    "name": "N"
+                }
+            ]
+        },
+        {
+            "name": "O",
+            "children": [
+                {
+                    "name": "P"
+                },
+                {
+                    "name": "Q",
+                    "children": [
+                        {
+                            "name": "R",
+                            "children": [
+                                {
+                                    "name": "S"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
