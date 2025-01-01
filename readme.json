@@ -1,0 +1,46 @@
+{
+  "flare": {
+    "analytics": {
+      "cluster": {
+        "AgglomerativeCluster": 3938,
+        "CommunityStructure": 3812,
+        "HierarchicalCluster": 6714,
+        "MergeEdge": 743
+      },
+      "graph": {
+        "BetweennessCentrality": 3534,
+        "LinkDistance": 5731,
+        "MaxFlowMinCut": 7840,
+        "ShortestPaths": 5914,
+        "SpanningTree": 3416
+      },
+      "optimization": {
+        "AspectRatioBanker": 7074
+      }
+    },
+    "animate": {
+      "Easing": 17010,
+      "FunctionSequence": 5842,
+      "interpolate": {
+        "ArrayInterpolator": 1983,
+        "ColorInterpolator": 2047,
+        "DateInterpolator": 1375,
+        "Interpolator": 8746,
+        "MatrixInterpolator": 2202,
+        "NumberInterpolator": 1382,
+        "ObjectInterpolator": 1629,
+        "PointInterpolator": 1675,
+        "RectangleInterpolator": 2042
+      },
+      "ISchedulable": 1041,
+      "Parallel": 5176,
+      "Pause": 449,
+      "Scheduler": 5593,
+      "Sequence": 5534,
+      "Transition": 9201,
+      "Transitioner": 19975,
+      "TransitionEvent": 1116,
+      "Tween": 6006
+    }
+  }
+}

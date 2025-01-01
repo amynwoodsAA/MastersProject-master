@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+rect {
+  stroke: #fff;
+}
+
+</style>
+<body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var width = 960,
+    height = 500;
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .range([0, height]);
+
+var color = d3.scale.category20c();
+
+var partition = d3.layout.partition()
+    .children(function(d) { return isNaN(d.value) ? d3.entries(d.value) : null; })
+    .value(function(d) { return d.value; });
+
+var container = d3.select("body").append("div").attr("width", width/4)
+    .attr("height", height/2)
+    .style("overflow-x", "scroll");
+
+
+var svg = container.append("svg")
+    .attr("width", width*2)
+    .attr("height", height);
+
+var rect = svg.selectAll("rect");
+
+d3.json("readme.json", function(error, root) {
+  if (error) throw error;
+
+  var redo = false;
+
+  do{
+    redo = false;
+    (partition(d3.entries(root)[0])).forEach(function(d){
+   // console.log("hi here ", d);
+
+    if(x(d.dx) < 5 * 2.5){
+      console.log("found redoing ", d, " current width ", width);
+        if(redo == false){
+          width = width + 1;
+          svg.attr("width", width)
+          x = d3.scale.linear()
+            .range([0, width]);
+          redo = true;
+        }
+    }
+  })
+  }while(redo == true);
+
+
+
+  rect = rect
+      .data(partition(d3.entries(root)[0]))
+    .enter().append("rect")
+      .attr("x", function(d) { return x(d.x); })
+      .attr("y", function(d) { return y(d.y); })
+      .attr("width", function(d) { return x(d.dx); })
+      .attr("height", function(d) { return y(d.dy); })
+      .attr("fill", function(d) { return color((d.children ? d : d.parent).key); })
+      .style('stroke', function(d){
+        if(x(d.dx) < 5 * 2.5){
+          console.log("d is ----------------- ", d)
+          console.log(" dx ", x(d.dx))
+          return 'black';
+        }
+
+        return 'white';
+      })
+      .on("click", clicked);
+
+  svg.append('g').selectAll("circle")
+  .data(partition(d3.entries(root)[0]))
+  .enter().append("circle")
+  .attr("r", 5)
+  .attr("cx", function(d) { 
+    
+
+    
+    return  (x(d.x) + x(d.x) + x(d.dx) )/ 2; 
+  } )
+  .attr("cy",  function(d) { 
+    return  (y(d.y) + y(d.y) + y(d.dy) )/ 2; 
+  })
+  .style("fill", "green")
+
+  svg.append("line")          // attach a line
+    .style("stroke", "black")  // colour the line
+    .attr("x1", 100)     // x position of the first end of the line
+    .attr("y1", 50)      // y position of the first end of the line
+    .attr("x2", 300)     // x position of the second end of the line
+    .attr("y2", 150);    // y position of the second end of the line
+});
+
+
+
+function clicked(d) {
+  x.domain([d.x, d.x + d.dx]);
+  y.domain([d.y, 1]).range([d.y ? 20 : 0, height]);
+  console.log("clicked d, ", d)
+
+  rect.transition()
+      .duration(750)
+      .attr("x", function(d) { return x(d.x); })
+      .attr("y", function(d) { return y(d.y); })
+      .attr("width", function(d) { return x(d.x + d.dx) - x(d.x); })
+      .attr("height", function(d) { return y(d.y + d.dy) - y(d.y); });
+}
+
+</script>
